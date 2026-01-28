@@ -5,6 +5,9 @@
 
 :root {
   --primary: #003631;
+  --primary-50: #d1fffb;
+  --primary-200: #47ffee;
+  --gray-700: #717171;
   --gray-950: #181818;
   --gray-200: #ededed;
   --radius: 0.625rem;
@@ -44,6 +47,9 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
+  --color-primary-50: var(--primary-50);
+  --color-primary-200: var(--primary-200);
+  --color-gray-700: var(--gray-700);
   --color-gray-950: var(--gray-950);
   --color-gray-200: var(--gray-200);
   --color-sidebar-ring: var(--sidebar-ring);
