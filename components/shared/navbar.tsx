@@ -29,11 +29,11 @@ const navMenu: NavMenu[] = [
 
 const Navbar = () => {
   return (
-    <div className="fixed top-0 left-0 right-0">
+    <div className="fixed top-0 left-0 right-0 container mx-auto">
       <nav className="p-5 lg:p-6 flex items-center justify-between gap-x-6 border border-white bg-background">
         <div className="flex items-center gap-x-2">
-          <div className="h-8 w-8 rounded-full bg-primary"></div>
-          <p className="text-gray-950 text-lg font-bold custom-text-tracking">
+          <div className="lg:h-8 w-6 lg:w-8 h-6 rounded-full bg-primary"></div>
+          <p className="text-grey-950 text-base lg:text-lg font-bold custom-text-tracking">
             Brand Name
           </p>
         </div>
@@ -42,7 +42,7 @@ const Navbar = () => {
             <Link
               key={index}
               href={item.path}
-              className=" px-5 py-4 transition-colors ease-out duration-300 hover:bg-gray-200 rounded-full text-base font-normal custom-text-tracking"
+              className=" px-5 py-4 transition-colors ease-out duration-300 hover:bg-grey-200 rounded-full text-base font-normal custom-text-tracking"
             >
               {item.title}
             </Link>
@@ -83,7 +83,7 @@ const MobileMenu = () => {
             <Link
               key={index}
               href={item.path}
-              className=" px-5 py-4 transition-colors ease-out duration-300 hover:bg-gray-200 rounded-full text-2xl font-medium text-center custom-text-tracking"
+              className=" px-5 py-4 transition-colors ease-out duration-300 hover:bg-grey-200 rounded-full text-2xl font-medium text-center custom-text-tracking"
             >
               {item.title}
             </Link>
