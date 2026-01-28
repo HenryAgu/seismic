@@ -43,7 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${satoshi.className} antialiased`}
+        className={`${satoshi.className} antialiased container mx-auto`}
       >
         <Navbar />
         {children}
