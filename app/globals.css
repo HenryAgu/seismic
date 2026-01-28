@@ -8,6 +8,7 @@
   --primary-50: #d1fffb;
   --primary-200: #47ffee;
   --primary-400: #008f82;
+  --grey-200: #ededed;
   --grey-700: #717171;
   --grey-950: #181818;
   --grey-200: #ededed;
@@ -51,6 +52,7 @@
   --color-primary-50: var(--primary-50);
   --color-primary-200: var(--primary-200);
   --color-primary-400: var(--primary-400);
+  --color-grey-200: var(--grey-200);
   --color-grey-700: var(--grey-700);
   --color-grey-950: var(--grey-950);
   --color-grey-200: var(--grey-200);
