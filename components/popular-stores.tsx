@@ -51,7 +51,7 @@ const stores: Stores[] = [
 
 const PopularStores = () => {
   return (
-    <section className="py-12 flex flex-col gap-6 px-5">
+    <section className="py-12 flex flex-col gap-6 px-5 lg:px-0">
       <span className="bg-primary-50 border-[0.5px] border-primary-200 text-center rounded-full py-3 px-6 w-fit text-sm font-normal custom-text-tracking mx-auto">
         Popular Stores
       </span>

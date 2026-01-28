@@ -1,3 +1,4 @@
+import CreateAccount from "@/components/create-account";
 import Hero from "@/components/hero";
 import PopularStores from "@/components/popular-stores";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Hero />
       <PopularStores/>
+      <CreateAccount/>
     </main>
   );
 }
