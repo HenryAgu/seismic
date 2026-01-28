@@ -71,24 +71,26 @@ const Navbar = () => {
 
 const MobileMenu = () => {
   return (
-    <div className="p-5 flex flex-col gap-y-20 h-screen w-full">
-      <SheetClose>
-        <div className="flex items-end justify-end">
-          <CloseIcon />
+    <Sheet>
+      <div className="p-5 flex flex-col gap-y-20 h-screen w-full">
+        <SheetClose asChild>
+          <div className="flex items-end justify-end">
+            <CloseIcon />
+          </div>
+        </SheetClose>
+        <div className="flex flex-col items-center gap-y-5 text-center">
+          {navMenu.map((item, index) => (
+            <Link
+              key={index}
+              href={item.path}
+              className=" px-5 py-4 transition-colors ease-out duration-300 hover:bg-gray-200 rounded-full text-2xl font-medium text-center custom-text-tracking"
+            >
+              {item.title}
+            </Link>
+          ))}
         </div>
-      </SheetClose>
-      <div className="flex flex-col items-center gap-y-5 text-center">
-        {navMenu.map((item, index) => (
-          <Link
-            key={index}
-            href={item.path}
-            className=" px-5 py-4 transition-colors ease-out duration-300 hover:bg-gray-200 rounded-full text-2xl font-medium text-center custom-text-tracking"
-          >
-            {item.title}
-          </Link>
-        ))}
       </div>
-    </div>
+    </Sheet>
   );
 };
 
