@@ -12,12 +12,14 @@ const highlightCards: HighlightCardType[] = [
   {
     image: "/highlight1.png",
     title: "Package Receiving",
-    description: "We receive your international orders at our overseas warehouse.",
+    description:
+      "We receive your international orders at our overseas warehouse.",
   },
   {
     image: "/highlight2.png",
     title: "Parcel Consolidation",
-    description: "Combine multiple packages into one shipment to reduce shipping costs.",
+    description:
+      "Combine multiple packages into one shipment to reduce shipping costs.",
   },
   {
     image: "/highlight3.png",
@@ -32,19 +34,23 @@ const highlightCards: HighlightCardType[] = [
   {
     image: "/highlight5.png",
     title: "Assisted Purchase",
-    description: "If a store doesn’t accept your card, share the product link and we’ll help you buy it.",
+    description:
+      "If a store doesn’t accept your card, share the product link and we’ll help you buy it.",
   },
   {
     image: "/highlight6.png",
     title: "Order Notifications",
-    description: "Get updates when your package arrives, ships, and is delivered.",
+    description:
+      "Get updates when your package arrives, ships, and is delivered.",
   },
 ];
 
-
 const PlatformHighlights = () => {
   return (
-    <section className="px-5 lg:px-10 xl:px-32 py-12 flex flex-col gap-y-8 scroll-mt-24" id="features">
+    <section
+      className="px-5 lg:px-10 xl:px-32 py-12 flex flex-col gap-y-8 scroll-mt-12 lg:scroll-mt-24"
+      id="features"
+    >
       <div className="flex flex-col gap-y-6">
         <Header title="Platform Highlights" />
         <SubText
@@ -53,8 +59,8 @@ const PlatformHighlights = () => {
         />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {highlightCards.map((item)=>(
-          <HighlightCard key={item.title} item={item}/>
+        {highlightCards.map((item) => (
+          <HighlightCard key={item.title} item={item} />
         ))}
       </div>
     </section>

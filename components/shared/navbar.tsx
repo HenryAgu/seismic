@@ -1,7 +1,9 @@
+"use client"
 import Link from "next/link";
 import MenuIcon from "../icons/menu";
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "../ui/sheet";
 import CloseIcon from "../icons/close";
+import { useRouter } from "next/navigation";
 
 interface NavMenu {
   path: string;
@@ -70,6 +72,7 @@ const Navbar = () => {
 };
 
 const MobileMenu = () => {
+  const router = useRouter();
   return (
     <Sheet>
       <div className="p-5 flex flex-col gap-y-20 h-screen w-full">
@@ -80,13 +83,14 @@ const MobileMenu = () => {
         </SheetClose>
         <div className="flex flex-col items-center gap-y-5 text-center">
           {navMenu.map((item, index) => (
-            <Link
-              key={index}
-              href={item.path}
-              className=" px-5 py-4 transition-colors ease-out duration-300 hover:bg-grey-200 rounded-full text-2xl font-medium text-center custom-text-tracking"
-            >
-              {item.title}
-            </Link>
+            <SheetClose asChild key={index}>
+              <button
+                onClick={() => router.push(item.path)}
+                className="px-5 py-4 transition-colors ease-out duration-300 hover:bg-grey-200 rounded-full text-2xl font-medium text-center custom-text-tracking"
+              >
+                {item.title}
+              </button>
+            </SheetClose>
           ))}
         </div>
       </div>
