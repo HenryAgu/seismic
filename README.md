@@ -1,4 +1,4 @@
-# Next.js Project
+# Seismic Landpage
 
 This is a Next.js project built with React, TypeScript, and Tailwind CSS. It includes core features for building a modern, responsive web application.  
 
@@ -8,8 +8,7 @@ This is a Next.js project built with React, TypeScript, and Tailwind CSS. It inc
 
 - **Author:** Henry Agu  
 - **GitHub:** [https://github.com/HenryAgu](https://github.com/HenryAgu)  
-- **Live Demo:** [Seismic](https://seismic-gamma.vercel.app/)  
-- **Stack:** Next.js, React, TypeScript, Tailwind CSS, Zustand, Axios  
+- **Live Demo:** [Seismic](https://seismic-gamma.vercel.app/)   
 
 ---
 
