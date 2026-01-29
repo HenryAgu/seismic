@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Header from "./header";
+import SubText from "./sub-text";
 
 interface Stores {
   image: string;
@@ -52,19 +54,11 @@ const stores: Stores[] = [
 const PopularStores = () => {
   return (
     <section className="py-12 flex flex-col gap-6 px-5 lg:px-0">
-      <span className="bg-primary-50 border-[0.5px] border-primary-200 text-center rounded-full py-3 px-6 w-fit text-sm font-normal custom-text-tracking mx-auto">
-        Popular Stores
-      </span>
-      <div className="flex flex-col items-center text-center gap-y-3">
-        <p className="text-grey-950 font-medium text-3xl lg:text-5xl lg:leading-[57.6px]">
-          Top Stores Nigerians Shop From
-        </p>
-        <p className="text-base tracking-[0.5%] font-normal leading-[25.6px] text-grey-700 max-w-165.5">
-          Shop from trusted international brands across fashion, electronics,
-          home, and more. We handle the delivery from abroad and bring your
-          items safely to Nigeria.
-        </p>
-      </div>
+      <Header title="Popular Stores" />
+      <SubText
+        title="Top Stores Nigerians Shop From"
+        description="Shop from trusted international brands across fashion, electronics, home, and more. We handle the delivery from abroad and bring your items safely to Nigeria."
+      />
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 lg:gap-6 lg:px-10 xl:px-32">
         {stores.map((item, index) => (
           <div
