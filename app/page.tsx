@@ -1,5 +1,6 @@
 import BuiltForYou from "@/components/built-for-you";
 import CreateAccount from "@/components/create-account";
+import Faqs from "@/components/faqs";
 import Hero from "@/components/hero";
 import PlatformHighlights from "@/components/platform-highlights";
 import PopularStores from "@/components/popular-stores";
@@ -13,6 +14,7 @@ export default function Home() {
       <PlatformHighlights />
       <BuiltForYou/>
       <Services />
+      <Faqs/>
       <CreateAccount />
     </main>
   );
