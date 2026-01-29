@@ -5,7 +5,10 @@ import Image from "next/image";
 
 const HowItWorks = () => {
   return (
-    <section className="px-5 lg:px-10 xl:px-32 py-12 flex flex-col gap-y-8 scroll-mt-24" id="steps">
+    <section
+      className="px-5 lg:px-10 xl:px-32 py-12 flex flex-col gap-y-8 scroll-mt-12 lg:scroll-mt-24"
+      id="steps"
+    >
       <div className="flex flex-col gap-y-6">
         <Header title="Simple Steps" />
         <SubText
@@ -15,7 +18,13 @@ const HowItWorks = () => {
         />
       </div>
       <div className="my-10 w-full lg:w-[80%] mx-auto">
-        <Image src="/steps.webp" width={967} height={1240} alt="steps-image" className="aspect-967/1240 w-full"/>
+        <Image
+          src="/steps.webp"
+          width={967}
+          height={1240}
+          alt="steps-image"
+          className="aspect-967/1240 w-full"
+        />
       </div>
     </section>
   );

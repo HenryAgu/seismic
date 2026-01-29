@@ -34,7 +34,10 @@ const faqs: Faq[] = [
 
 const Faqs = () => {
   return (
-    <section className="px-5 lg:px-10 xl:px-32 py-12 flex flex-col gap-y-8 scroll-mt-24" id="faqs">
+    <section
+      className="px-5 lg:px-10 xl:px-32 py-12 flex flex-col gap-y-8 scroll-mt-12 lg:scroll-mt-12 lg:scroll-mt-24"
+      id="faqs"
+    >
       <div className="flex flex-col gap-y-6">
         <Header title="Built for You" />
         <SubText
@@ -80,7 +83,12 @@ const Faqs = () => {
             Reach out to our support team.
           </p>
         </div>
-        <Link href="" className="border border-primary py-4 px-5 rounded-full font-bold text-sm">Contact Us</Link>
+        <Link
+          href=""
+          className="border border-primary py-4 px-5 rounded-full font-bold text-sm"
+        >
+          Contact Us
+        </Link>
       </div>
     </section>
   );
