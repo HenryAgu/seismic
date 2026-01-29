@@ -38,7 +38,7 @@ const BuiltForYou = () => {
         />
       </div>
 
-      <div className="flex flex-col lg:flex-row gap-6">
+      <div className="flex flex-col md:flex-row gap-6">
         {builtForCards.map((card) => (
           <BuiltForCard key={card.title} card={card} />
         ))}

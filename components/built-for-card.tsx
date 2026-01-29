@@ -24,7 +24,7 @@ export const BuiltForCard = ({ card }: BuiltForCardProps) => {
       alt={card.title}
       width={620}
       height={457}
-      className="object-cover"
+      className="object-cover w-full"
     />
   );
 
@@ -36,7 +36,7 @@ export const BuiltForCard = ({ card }: BuiltForCardProps) => {
         border-[0.5px] border-grey-400 h-fit
         rounded-[32px]
         overflow-hidden
-        ${card.offset ? "lg:mt-24" : ""}
+        ${card.offset ? "md:mt-24" : ""}
       `}
     >
       {card.imagePosition === "top" ? image : content}

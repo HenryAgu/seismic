@@ -31,7 +31,7 @@ const services: ServicesType[] = [
 
 const Services = () => {
   return (
-    <section className="px-5 lg:px-10 xl:px-32 py-12 grid grid-cols-1 lg:grid-cols-4 gap-6">
+    <section className="px-5 lg:px-10 xl:px-32 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
       {services.map((item) => (
         <div className="bg-grey-200 p-6 py-10 lg:py-6 rounded-[32px] flex flex-col items-center gap-y-6" key={item.title}>
           <Image src={item.image} alt={item.title} width={52} height={52} className="aspect-square" />
