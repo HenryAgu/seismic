@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const HowItWorks = () => {
   return (
-    <section className="px-5 lg:px-10 xl:px-32 py-12 flex flex-col gap-y-8">
+    <section className="px-5 lg:px-10 xl:px-32 py-12 flex flex-col gap-y-8 scroll-mt-24" id="steps">
       <div className="flex flex-col gap-y-6">
         <Header title="Simple Steps" />
         <SubText

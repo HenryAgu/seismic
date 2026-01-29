@@ -10,15 +10,15 @@ interface NavMenu {
 
 const navMenu: NavMenu[] = [
   {
-    path: "",
+    path: "#steps",
     title: "How it works",
   },
   {
-    path: "",
+    path: "#features",
     title: "Features",
   },
   {
-    path: "",
+    path: "#faqs",
     title: "FAQs",
   },
   {
@@ -29,14 +29,14 @@ const navMenu: NavMenu[] = [
 
 const Navbar = () => {
   return (
-    <div className="fixed top-0 left-0 right-0 container z-50 mx-auto">
+    <div className="fixed top-0 left-0 right-0 container z-50 mx-auto" id="top">
       <nav className="p-5 lg:p-6 flex items-center justify-between gap-x-6 border border-white bg-background">
-        <div className="flex items-center gap-x-2">
+        <Link href="#top" className="flex items-center gap-x-2">
           <div className="lg:h-8 w-6 lg:w-8 h-6 rounded-full bg-primary"></div>
           <p className="text-grey-950 text-base lg:text-lg font-bold custom-text-tracking">
             Brand Name
           </p>
-        </div>
+        </Link>
         <div className="hidden lg:flex items-center ">
           {navMenu.map((item, index) => (
             <Link

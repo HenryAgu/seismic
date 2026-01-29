@@ -8,15 +8,15 @@ interface FooterMenu {
 const Footer = () => {
   const footerMenu: FooterMenu[] = [
     {
-      path: "",
+      path: "#steps",
       title: "How it works",
     },
     {
-      path: "",
+      path: "#features",
       title: "Features",
     },
     {
-      path: "",
+      path: "#faqs",
       title: "FAQs",
     },
     {

@@ -34,7 +34,7 @@ const faqs: Faq[] = [
 
 const Faqs = () => {
   return (
-    <section className="px-5 lg:px-10 xl:px-32 py-12 flex flex-col gap-y-8">
+    <section className="px-5 lg:px-10 xl:px-32 py-12 flex flex-col gap-y-8 scroll-mt-24" id="faqs">
       <div className="flex flex-col gap-y-6">
         <Header title="Built for You" />
         <SubText
