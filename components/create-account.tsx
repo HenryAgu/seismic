@@ -37,7 +37,7 @@ const CreateAccount = () => {
               width={298}
               height={248}
               alt=""
-              className="border-[0.5px] border-grey-400 rounded-[32px] object-cover"
+              className="border-[0.5px] border-grey-400 rounded-[32px] object-cover w-full"
             />
           </div>
           <div className="basis-2/4">
@@ -46,7 +46,7 @@ const CreateAccount = () => {
               width={298}
               height={248}
               alt=""
-              className="border-[0.5px] border-grey-400 rounded-[32px] object-cover"
+              className="border-[0.5px] border-grey-400 rounded-[32px] object-cover w-full"
             />
           </div>
         </div>
