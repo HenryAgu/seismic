@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Project
 
-## Getting Started
+This is a Next.js project built with React, TypeScript, and Tailwind CSS. It includes core features for building a modern, responsive web application.  
 
-First, run the development server:
+---
 
+## 👤 Project Profile
+
+- **Author:** Henry Agu  
+- **GitHub:** [https://github.com/HenryAgu](https://github.com/HenryAgu)  
+- **Live Demo:** [Seismic](https://seismic-gamma.vercel.app/)  
+- **Stack:** Next.js, React, TypeScript, Tailwind CSS, Zustand, Axios  
+
+---
+
+## Tech stack
+
+- TypeScript
+- TailwindCSS
+- Shadcn UI
+- NextJs (React).
+
+---
+
+## Preview
+Here are some snippets:
+<img width="1901" height="869" alt="image" src="https://github.com/user-attachments/assets/a4458e95-c8dd-43fc-8ec3-d477f4e3c828" />
+<img width="1899" height="865" alt="image" src="https://github.com/user-attachments/assets/457569b0-2a01-42e8-9443-ae30a93b3252" />
+<img width="1898" height="863" alt="image" src="https://github.com/user-attachments/assets/57438161-f4a5-4ecb-bbbe-1e415dc0235f" />
+
+---
+
+## Setup Instructions
+
+1. **Clone the repository**
 ```bash
+git clone https://github.com/HenryAgu/seismic.git
+cd seismic
+```
+
+2. **Install dependencies**
+```
+pnpm install
+# or
+yarn install
+```
+
+3. **Run the development server**
+```
+pnpm run dev
+# or
 npm run dev
 # or
 yarn dev
+```
+Open http://localhost:3000 in your browser.
+
+4. **Build for production**
+```
+pnpm run build
+pnpm run start
 # or
-pnpm dev
+npm run build
+npm run start
 # or
-bun dev
+yarn build
+yarn start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. **Project Structure**
+```
+/app        # Next.js 13+ App Router pages
+/components # Reusable React components
+/public     # Static assets (images, fonts, etc.)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+``` 
