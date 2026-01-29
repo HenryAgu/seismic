@@ -1,3 +1,4 @@
+import BuiltForYou from "@/components/built-for-you";
 import CreateAccount from "@/components/create-account";
 import Hero from "@/components/hero";
 import PlatformHighlights from "@/components/platform-highlights";
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <PopularStores />
       <PlatformHighlights />
+      <BuiltForYou/>
       <Services />
       <CreateAccount />
     </main>
